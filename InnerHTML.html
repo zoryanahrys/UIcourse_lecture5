@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InnerHTML</title>
+    <style>
+        body{
+        background-color: #FFCCE5;
+        };
+    </style>
+</head>
+  <body>
+   <h1>JavaSript. InnerHTML</h1>
+    <ul id="list">
+ 	</ul>
+        <script>
+            var doc = document;
+            var elems = doc.getElementById('list'); 
+            for(var i=1; i<=100; i++){  
+                elems.innerHTML += '<li>Text ' + [i] + '</li>';
+            };
+        </script>   
+</body>
+</html>

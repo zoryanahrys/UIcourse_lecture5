@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join</title>
+    <style>
+        body{
+        background-color: #FFCCE5;
+        };
+    </style>
+</head>
+  <body>
+   <h1>JavaSript. Join</h1>
+    <ul id="list">
+ 	</ul>
+        <script>
+            var doc = document;
+            var arr = [];
+            for(var i=1; i<=100; i++){
+                arr.push('<li>Text ' + [i] + '</li>');
+            };
+                var str = arr.join('\n');
+                doc.getElementById("list").insertAdjacentHTML ("beforebegin", str);
+        </script>   
+</body>
+</html>

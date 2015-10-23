@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragment</title>
+    <style>
+        body{
+        background-color: #FFCCE5;
+        };
+    </style>
+</head>
+  <body>
+   <h1>JavaSript. Fragment</h1>
+    <ul id="list">
+ 	</ul>
+        <script>
+            var doc = document;
+            var elems = doc.getElementById('list');
+            var fragment = doc.createDocumentFragment();
+
+            for(var i=1; i<=100; i++){
+                var fragmentElems = doc.createDocumentFragment('li');
+                var fragmentText = doc.createTextNode('Text ' + [i] + '; ');
+                fragmentElems.appendChild(fragmentText);
+                fragment.appendChild(fragmentElems);
+            };
+                elems.appendChild(fragment);
+        </script>   
+</body>
+</html>
